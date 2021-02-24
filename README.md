@@ -38,7 +38,7 @@ Hinsichtlich der forstwirtschaftlich genutzten Flächen sind nur geringe Änderu
 ## Gebäude
 Die Gebäude der Stadt haben sich seit 1945 bis heute stetig ausgebreitet entsprechend der örtlichen demographischen Entwicklungen.
 
-![](https://user-images.githubusercontent.com/74064035/109000434-01180e80-76a4-11eb-92d1-cc77d2fb1fd1.png){#id .class width=65% height=65%}
+<img width="612" alt="Demographie_Marburg" src="https://user-images.githubusercontent.com/74064035/109000434-01180e80-76a4-11eb-92d1-cc77d2fb1fd1.png">
 
 Immer wieder zu beobachten ist, dass Baulücken geschlossen wurden, aber auch viele Agrarflächen zu neuen Baugebieten umgewandelt wurden (siehe Michelbach Nord). Auch wurden Baugebiete auf forstliche Flächen ausgedehnt (siehe Lahnberge) jedoch wurden auf ehemals forstwirtschaftlichen Flächen meist nur punktuell Bäume entnommen, wo die Gebäude gebaut wurden, anstatt die ganze Baugebietsfläche kahl zu schlagen.
 
