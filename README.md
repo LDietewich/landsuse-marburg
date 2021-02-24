@@ -1,3 +1,5 @@
+# Landnutzungswandel der Stadt Marburg von 1945 bis 2021
+
 ## Projektbeschreibung
 
 Landnutzung ist für unser Wohlergehen und damit für viele der großen Nachhaltigkeitsherausforderungen des 21. Jahrhunderts von zentraler Bedeutung. Dazu gehören unter anderem die globale Ernährungssicherung, die Eindämmung des Klimawandels, der Zugang zu sauberem Wasser und sauberer Luft sowie der Schutz von Biodiversität.
@@ -50,6 +52,10 @@ Am Beispiel des Stadtjubiläums könnte das Beispielsweise der Bildschirm an der
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mCGnWKsgfyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Authoren
--Leon Dietewich
--Jan-Eric Bastijans
+###--------------------------------------------------
+Authoren: Leon Dietewich, Jan-Eric Bastijans
+Philipps-Universität Marburg
+Wintersemester 2020/2021
+Modul: Globaler Wandel
+Dozierende: Dr. Jürgen Kluge, Dr. Dietrich Göttlicher
+Datum: 24.02.2021
