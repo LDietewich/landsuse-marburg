@@ -53,7 +53,7 @@ Am Beispiel des Stadtjubiläums könnte das beispielsweise der Bildschirm an der
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mCGnWKsgfyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### --------------------------------------------------
-- Authoren: Leon Dietewich, Jan-Eric Bastijans
+- Autoren: Leon Dietewich, Jan-Eric Bastijans
 - Philipps-Universität Marburg
 - Wintersemester 2020/2021
 - Modul: Globaler Wandel
