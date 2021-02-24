@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+## Projektbeschreibung
 
-You can use the [editor on GitHub](https://github.com/LDietewich/landsuse-marburg/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Landnutzung ist für unser Wohlergehen und damit für viele der großen Nachhaltigkeitsherausforderungen des 21. Jahrhunderts von zentraler Bedeutung. Dazu gehören unter anderem die globale Ernährungssicherung, die Eindämmung des Klimawandels, der Zugang zu sauberem Wasser und sauberer Luft sowie der Schutz von Biodiversität.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Häufig wird der Prozess des Landnutzungswandels auf globaler Ebene betrachtet, jedoch ist er das Ergebnis der Summe vieler regional stattfindenden Landnutzungsänderungen.
 
-### Markdown
+Ziel dieses Projektes ist es den Landnutzungswandel der Stadt Marburg aufzuzeigen und zu visualisieren. Als Ergebnis soll ein Zeitraffervideo die Veränderungen der Agrar-, Forst- und Gebäudeflächen darstellen und potentiell beim Stadtjubiläum "800 Jahre Marburg", oder auch in historischen Austellungen präsentiert werden.
+Des Weiteren ist es uns ein besonderes Anliegen den in diesem Projekt erstellten Datensatz zur verfügung zu stellen und zur Weiterführung des Projektes oder anderen thematisch angrenzenden Projekten anzuregen.
+Besonders zu betonen ist, dass es sich bei dieser Arbeit um einen ersten Versuch handelt die Landnutzung der Stadt rein mittels Luftbildern zu interpretieren ohne dabei andere Informationsquellen hinzuzuziehen. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Datengrundlage
+Zunächst war geplant die Stadtentwicklung Marburgs für den Zeitraum von etwa 1800 bis heute zu bearbeiten und darzustellen, anlehnend an die Arbeiten von Angel et.al.(2011,2016), bei welchen ein Atlas der urbanen Expansion von 200 Großstädten entstand. Die fehlende Verfügbarkeit und Einheitlichkeit von Karten- und Luftbildmaterial hat diese anfänglichen Pläne jedoch rasch zunichte gemacht. Daraufhin orientierten wir uns daran welche Daten überhaupt verfügbar und zu bearbeiten waren. Die Daten für die Darstellung des Jahres 2021 stammen aus OpenStreetMap(OSM) und aktuelle Satelitenaufnahmen aus einem WMS Server von Google Maps.
+Die historischen Luftbilder wurden vom Fachbereich 19 Geographie der Universität Marburg zur verfügung gestellt, welche ursprünglich von der Hessischen Verwaltung für Bodenmanagement und Geoinformation stammen. Zur Verfügung standen Luftbilder der Jahre: 1945, 1975, 1985 und 1999.
+Diese lagen zunächst in einer unterschiedlichen Anzahl Kacheln für das Stadtgebiet vor und waren noch nicht georeferenziert. 
+Die qualität der Luftbilder nimmt mit steigendem Alter stetig ab, was die interpretation teilweise stark erschwerte.
 
-```markdown
-Syntax highlighted code block
+## Arbeitsschritte
+- gearbeitet wurde mit QGIS 3.10 a Coruna
+- die historischen Luftbilder wurden für das Stadtgebiet zusammengesucht, georeferenziert und anschließend verschmolzen
+- parallel wurde die aktuelle Landnutzung digitalisiert
+- Eingeteilt und untersucht wurden die Flächen Marburgs in den Kategorien Agrarfläche, Forstwirtschaftliche Fläche und reine Gebäudeflächen um den Rahmen nicht zu sprengen
+- um die aktuelle Landnutzung im Stadtgebiet zu digitalisieren wurden die Geometrien für die einzelnen Kategorien welche aus OSM importiert wurden, um fehlende Geometrien mittels der aktuellen Satellitenbilder von Google vervollständigt
+- im Anschluss wurde dieser aktuelle Stand mit den vorbereiteten Luftbildern der jeweiligen Jahre verglichen und für Kategorie und Jahr angepasst
+- dabei musste immer wieder auch mit den aktuellen Satellitenbildern und OSM vermittelt werden, da die georeferenzierten historischen Luftbilder nach wie vor einen gewissen Versatz aufweisen
 
-# Header 1
-## Header 2
-### Header 3
+## Agrarwirtschaftsflächen
+Die Agrarflächen im Stadtgebiet sind seit 1945 stetig zurückgegangen, hauptsächlich zugunsten neuer Baugebiete. In der Aufnahme von 1945 kann man sehr viele landwirtschaftlich genutze Flächen mitten im Siedlungsgebiet beobachten, welche in den folgenden Aufnahemn nach und nach bebaut wurden.
 
-- Bulleted
-- List
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j8KIbKlCRjA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-1. Numbered
-2. List
+## Forstwirtschaftsflächen
+Hinsichtlich der forstwirtschaftlich genutzten Flächen sind nur geringe änderungen zwischen den Jahren zu erkennen. Fluktuation ist besonders in kleineren Flcähen innerhalb der Agrarlandschaft zu verzeichnen. Besonders hervor sticht jedoch die Veränderung im Bereich der Lahnberge (Bau des Uniklinikums und des Universitätscampus), welche im Jahre 1945 noch gar nicht zu erkennen ist aber sich zunehmen in den darauffolgend digitalisierten Jahren zeigt.
 
-**Bold** and _Italic_ and `Code` text
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pH_Id7xFS1k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Link](url) and ![Image](src)
-```
+## Gebäude
+Die Gebäude der Stadt haben sich seit 1945 bis heute stetig ausgebreitet entsprechend der örtlichen demographischen Entwicklungen.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![](C:/Users/Diete/OneDrive/Desktop/Globaler-Wandel/Visualisierung/Demographie_Marburg.png){#id .class width=65% height=65%}
 
-### Jekyll Themes
+Immer wieder zu beobachten ist, dass Baulücken geschlossen wurden, aber auch viele Agrarflächen zu neuen Baugebieten umgewandelt wurden (siehe Michelbach Nord. Auch wurden Bauchgebiete auf Forstliche Flächen ausgedehnt (siehe Lahnberge), jedoch wurden auf ehemals forstwirtschaflichen Flächen meist nur punktuell Bäume entnommen wo die Gebäude gebaut wurden, anstatt die ganze Baugebietsfläche kahl zu schlagen.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LDietewich/landsuse-marburg/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DWtefynTbcg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Visualisierung für 800 Jahre Marburg
+
+Diese Visualisierung wird idealerweise in Dauerschleife auf einem dem Anlass angemessenen Gerät wiedergegeben.
+Am Beispiel des Stadtjubiläums könnte das Beispielsweise der Bildschirm an der Bushaltestelle Erwin-Piscator Haus sein oder ähnliches. Eine online Präsentation wäre auch denkbar.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mCGnWKsgfyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Authoren
+-Leon Dietewich
+-Jan-Eric Bastijans
